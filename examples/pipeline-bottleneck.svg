@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">疏通流水线中的真正瓶颈</title><desc id="desc">不是所有步骤都值得同时优化。</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#D8D1C3" opacity=".24"/><circle cx="8" cy="9" r=".8" fill="#D8D1C3" opacity=".22"/></pattern>
+    <pattern id="half" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#C9C6BF"/><circle cx="2" cy="2" r="1.15" fill="#AAA59C"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#171717"/></marker>
+  </defs>
+  <rect width="800" height="800" rx="30" fill="#F7F3EA"/><rect width="800" height="800" rx="30" fill="url(#paper)"/>
+  <g font-family="'Noto Sans CJK SC','PingFang SC','Segoe UI',sans-serif" fill="#171717">
+    <text x="48" y="72" font-size="38" font-weight="780">疏通流水线中的真正瓶颈</text><text x="49" y="108" font-size="19" font-weight="600" fill="#6D6962">不是所有步骤都值得同时优化。</text><path d="M48 128H752" stroke="#171717" opacity=".2"/>
+    <text x="188" y="220" text-anchor="middle" font-size="29" font-weight="800" fill="#D9894C">瓶颈</text><text x="590" y="220" text-anchor="middle" font-size="29" font-weight="800" fill="#78A67F">并行</text>
+    <g fill="#7FA7D8" stroke="#171717" stroke-width="2.5"><circle cx="85" cy="320" r="14"/><circle cx="125" cy="358" r="14"/><circle cx="165" cy="320" r="14"/><circle cx="205" cy="358" r="14"/><circle cx="245" cy="320" r="14"/></g>
+    <path d="M300 250L390 300V430L300 480Z" fill="#FFFDF8" stroke="#171717" stroke-width="4"/><path d="M280 339H368" stroke="#171717" stroke-width="5" marker-end="url(#arrow)"/>
+    <rect x="379" y="326" width="70" height="78" rx="18" fill="#D9894C" stroke="#171717" stroke-width="4"/><path d="M402 351H426M414 339V391" stroke="#171717" stroke-width="5" stroke-linecap="round"/>
+    <path d="M450 365H520" stroke="#171717" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M455 300H690" stroke="#7FA7D8" stroke-width="28" stroke-linecap="round"/><circle cx="708" cy="300" r="17" fill="#7FA7D8" stroke="#171717" stroke-width="3"/><path d="M455 370H690" stroke="#9B83C7" stroke-width="28" stroke-linecap="round"/><circle cx="708" cy="370" r="17" fill="#9B83C7" stroke="#171717" stroke-width="3"/><path d="M455 440H690" stroke="#78A67F" stroke-width="28" stroke-linecap="round"/><circle cx="708" cy="440" r="17" fill="#78A67F" stroke="#171717" stroke-width="3"/>
+    <g transform="translate(150 570)"><circle cx="0" cy="0" r="46" fill="#FFFDF8" stroke="#171717" stroke-width="3"/><path d="M-31-30C-18-48 18-48 32-29M-18-38L-7-51M5-42L19-51" fill="none" stroke="#171717" stroke-width="4" stroke-linecap="round"/><rect x="-32" y="-10" width="27" height="20" rx="7" fill="none" stroke="#171717" stroke-width="3"/><rect x="5" y="-10" width="27" height="20" rx="7" fill="none" stroke="#171717" stroke-width="3"/><path d="M-5 0H5M-10 20Q0 27 10 20M0 46V116M-30 75H30" fill="none" stroke="#171717" stroke-width="3" stroke-linecap="round"/></g>
+    <path d="M270 590C329 570 354 500 388 410" fill="none" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(570 590)"><ellipse cx="0" cy="20" rx="58" ry="70" fill="url(#half)" stroke="#171717" stroke-width="3"/><circle cx="0" cy="-40" r="48" fill="url(#half)" stroke="#171717" stroke-width="3"/><path d="M-37-69L-30-102L-10-75M10-75L31-102L38-68" fill="url(#half)" stroke="#171717" stroke-width="3"/><ellipse cx="-18" cy="-40" rx="11" ry="14" fill="#F2C14E" stroke="#171717" stroke-width="2"/><ellipse cx="18" cy="-40" rx="11" ry="14" fill="#F2C14E" stroke="#171717" stroke-width="2"/><ellipse cx="0" cy="-17" rx="24" ry="18" fill="#FFFDF8" stroke="#171717" stroke-width="2"/><path d="M-38-16H-70M38-16H70M-27-77L-21-62M0-82V-63M27-77L21-62" stroke="#171717" stroke-width="3"/><circle cx="0" cy="4" r="13" fill="#E6AD2F" stroke="#171717" stroke-width="2"/></g>
+    <text x="400" y="732" text-anchor="middle" font-size="23" font-weight="720" fill="#6D6962">先找最窄的一段，再决定拆分、缓存或并行。</text>
+  </g>
+</svg>
