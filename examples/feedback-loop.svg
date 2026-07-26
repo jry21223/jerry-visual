@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">输入、结果与反馈组成闭环</title><desc id="desc">把一次生成变成可持续修正的过程。</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#D8D1C3" opacity=".24"/><circle cx="8" cy="9" r=".8" fill="#D8D1C3" opacity=".22"/></pattern>
+    <pattern id="half" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#C9C6BF"/><circle cx="2" cy="2" r="1.15" fill="#AAA59C"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#171717"/></marker>
+  </defs>
+  <rect width="800" height="800" rx="30" fill="#F7F3EA"/><rect width="800" height="800" rx="30" fill="url(#paper)"/>
+  <g font-family="'Noto Sans CJK SC','PingFang SC','Segoe UI',sans-serif" fill="#171717">
+    <text x="48" y="72" font-size="38" font-weight="780">输入、结果与反馈组成闭环</text><text x="49" y="108" font-size="19" font-weight="600" fill="#6D6962">把一次生成变成可持续修正的过程。</text><path d="M48 128H752" stroke="#171717" opacity=".2"/>
+    <path d="M456 213C520 225 571 267 598 327M615 416C593 491 538 548 456 581M348 597C270 587 205 535 176 423M172 337C193 263 255 217 344 211" fill="none" stroke="#171717" stroke-width="5" marker-end="url(#arrow)"/>
+    <g font-size="25" font-weight="800" text-anchor="middle"><rect x="350" y="175" width="100" height="70" rx="20" fill="#7FA7D8" stroke="#171717" stroke-width="3"/><text x="400" y="220">输入</text><rect x="565" y="340" width="100" height="70" rx="20" fill="#9B83C7" stroke="#171717" stroke-width="3"/><text x="615" y="385">处理</text><rect x="350" y="560" width="100" height="70" rx="20" fill="#78A67F" stroke="#171717" stroke-width="3"/><text x="400" y="605">结果</text><rect x="135" y="340" width="100" height="70" rx="20" fill="#F2C14E" stroke="#171717" stroke-width="3"/><text x="185" y="385">反馈</text></g>
+    <circle cx="400" cy="392" r="128" fill="#FFFDF8" stroke="#171717" stroke-width="3"/>
+    <g transform="translate(350 350)"><circle cx="0" cy="0" r="42" fill="#FFFDF8" stroke="#171717" stroke-width="3"/><path d="M-28-29C-17-45 16-46 30-28M-17-36L-6-48M5-40L18-49" fill="none" stroke="#171717" stroke-width="4" stroke-linecap="round"/><rect x="-30" y="-10" width="25" height="19" rx="7" fill="none" stroke="#171717" stroke-width="3"/><rect x="5" y="-10" width="25" height="19" rx="7" fill="none" stroke="#171717" stroke-width="3"/><path d="M-5-1H5M-9 18Q0 25 9 18M0 42V88M-30 62H30" fill="none" stroke="#171717" stroke-width="3" stroke-linecap="round"/></g>
+    <g transform="translate(470 410)"><ellipse cx="0" cy="25" rx="50" ry="62" fill="url(#half)" stroke="#171717" stroke-width="3"/><circle cx="0" cy="-28" r="43" fill="url(#half)" stroke="#171717" stroke-width="3"/><path d="M-33-54L-27-84L-9-59M9-59L28-84L34-53" fill="url(#half)" stroke="#171717" stroke-width="3"/><ellipse cx="-16" cy="-29" rx="10" ry="13" fill="#F2C14E" stroke="#171717" stroke-width="2"/><ellipse cx="16" cy="-29" rx="10" ry="13" fill="#F2C14E" stroke="#171717" stroke-width="2"/><ellipse cx="0" cy="-9" rx="22" ry="16" fill="#FFFDF8" stroke="#171717" stroke-width="2"/><path d="M-35-7H-64M35-7H64M-24-62L-19-49M0-67V-50M24-62L19-49" stroke="#171717" stroke-width="3"/><circle cx="0" cy="10" r="12" fill="#E6AD2F" stroke="#171717" stroke-width="2"/></g>
+    <text x="400" y="724" text-anchor="middle" font-size="24" font-weight="720" fill="#6D6962">输出不是终点；反馈会改变下一轮输入。</text>
+  </g>
+</svg>
