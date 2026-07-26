@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">jerry-visual 两种输出路径</title>
+  <desc id="desc">Mode A 生成带场景和准确标签的完整解释图；Mode B 生成纯色背景角色图，再通过 cutout.py 输出透明 PNG。</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#D8D1C3" stroke-width="1" opacity="0.24"/>
+      <circle cx="8" cy="9" r="0.8" fill="#D8D1C3" opacity="0.22"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L10 5L0 10Z" fill="#171717"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="#F7F3EA"/>
+  <rect width="1200" height="520" rx="28" fill="url(#paper)"/>
+  <g font-family="'Noto Sans CJK SC','PingFang SC','Segoe UI',sans-serif">
+    <text x="56" y="72" font-size="42" font-weight="800" fill="#171717">同一种视觉语言，两种交付路径</text>
+    <text x="58" y="108" font-size="20" font-weight="600" fill="#6D6962">先判断图片是否需要独立解释，再决定成品场景或透明角色资产。</text>
+    <g transform="translate(48 146)">
+      <rect width="532" height="322" rx="26" fill="#FFFDF8" stroke="#171717" stroke-width="3"/>
+      <rect x="24" y="22" width="132" height="46" rx="23" fill="#F2C14E" stroke="#171717" stroke-width="2.5"/>
+      <text x="90" y="53" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">Mode A</text>
+      <text x="24" y="108" font-size="31" font-weight="800" fill="#171717">完整解释图</text>
+      <text x="24" y="142" font-size="18" font-weight="600" fill="#6D6962">概念、机制、流程、对比与取舍</text>
+      <g transform="translate(24 184)">
+        <rect width="112" height="70" rx="18" fill="#7FA7D8" stroke="#171717" stroke-width="3"/>
+        <text x="56" y="45" text-anchor="middle" font-size="22" font-weight="780" fill="#171717">视觉 brief</text>
+        <path d="M128 35 H172" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+        <rect x="185" width="132" height="70" rx="18" fill="#9B83C7" stroke="#171717" stroke-width="3"/>
+        <text x="251" y="44" text-anchor="middle" font-size="22" font-weight="780" fill="#171717">场景 + 标签</text>
+        <path d="M330 35 H374" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+        <rect x="388" width="96" height="70" rx="18" fill="#78A67F" stroke="#171717" stroke-width="3"/>
+        <text x="436" y="44" text-anchor="middle" font-size="22" font-weight="780" fill="#171717">PNG</text>
+      </g>
+      <text x="24" y="292" font-size="18" font-weight="650" fill="#6D6962">关系由物体、路径和状态表达；标签只负责命名证据。</text>
+    </g>
+    <g transform="translate(620 146)">
+      <rect width="532" height="322" rx="26" fill="#FFFDF8" stroke="#171717" stroke-width="3"/>
+      <rect x="24" y="22" width="132" height="46" rx="23" fill="#7FA7D8" stroke="#171717" stroke-width="2.5"/>
+      <text x="90" y="53" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">Mode B</text>
+      <text x="24" y="108" font-size="31" font-weight="800" fill="#171717">透明角色资产</text>
+      <text x="24" y="142" font-size="18" font-weight="600" fill="#6D6962">Hero、卡片、文档、幻灯片与复用插画</text>
+      <g transform="translate(20 184)">
+        <rect width="104" height="70" rx="18" fill="#F2C14E" stroke="#171717" stroke-width="3"/>
+        <text x="52" y="44" text-anchor="middle" font-size="21" font-weight="780" fill="#171717">角色场景</text>
+        <path d="M116 35 H150" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+        <rect x="162" width="92" height="70" rx="18" fill="#00FF00" stroke="#171717" stroke-width="3"/>
+        <text x="208" y="44" text-anchor="middle" font-size="20" font-weight="800" fill="#171717">纯色底</text>
+        <path d="M266 35 H300" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+        <rect x="312" width="104" height="70" rx="18" fill="#9B83C7" stroke="#171717" stroke-width="3"/>
+        <text x="364" y="44" text-anchor="middle" font-size="19" font-weight="800" fill="#171717">cutout.py</text>
+        <path d="M428 35 H456" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+        <rect x="468" width="52" height="70" rx="18" fill="none" stroke="#171717" stroke-width="3" stroke-dasharray="6 5"/>
+        <circle cx="494" cy="35" r="14" fill="#F2C14E" stroke="#171717" stroke-width="2"/>
+      </g>
+      <text x="24" y="292" font-size="18" font-weight="650" fill="#6D6962">保留透明 PNG；标题、正文和说明由外部布局负责。</text>
+    </g>
+  </g>
+</svg>
