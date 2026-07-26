@@ -1,11 +1,70 @@
 ---
-name: oil-visual
-description: "Create a consistent oil-style visual system in two modes: finished explanatory images with short accurate labels generated directly inside the scene, and transparent character illustrations produced with a bundled background-removal script. Use for concepts, mechanisms, comparisons, workflows, tradeoffs, hero artwork, editorial character scenes, and reusable layout illustrations featuring the glasses stick figure and warm-yellow Border Collie."
+name: jerry-visual
+description: "Create a consistent Jerry-native visual system for explanatory images, README heroes, editorial scenes, and transparent reusable illustrations. The recurring character pair is Jerry—a young East Asian man with short black hair and round glasses—and his Bengal-cat × Chinese Li Hua cat mix, identified by a silver-gray coat, dark wild-pattern markings, warm yellow eyes, pale muzzle, long white whiskers, and a small gold collar tag."
 ---
 
-# Oil Visual
+# Jerry Visual
 
-Create raster visuals in one shared manga-ink language. Choose one output mode before generating; do not mix the two production paths.
+Create raster visuals in one shared editorial manga-ink language. The visual identity belongs to Jerry and his cat. Do not reuse the former stick figure or Border Collie character system.
+
+Choose one output mode before generating. Do not generate finished assets until the mode, destination, visual brief, and identity constraints are established.
+
+## Canonical character system
+
+### Jerry
+
+Keep these traits stable across outputs:
+
+- Young East Asian man.
+- Short, naturally textured black hair with a soft fringe.
+- Large round or softly rectangular dark-rimmed glasses.
+- Calm, thoughtful, friendly expression; avoid exaggerated anime proportions.
+- Light-colored T-shirt, sweatshirt, or simple shirt unless the scene requires otherwise.
+- Slim, natural build and relaxed posture.
+- No hat by default.
+
+When a reference photo contains a temporary accessory that the user explicitly asks to ignore—such as a hat, headpiece, mask, costume item, or background object—exclude it from the canonical design and every generated output.
+
+Do not overfit to camera distortion, unusual lighting, temporary blemishes, or accidental facial expressions. Preserve recognizable structure while simplifying it into the shared illustration language.
+
+### Cat
+
+The cat is a **Bengal-cat × Chinese Li Hua cat mix**, not a generic tabby and not a purebred Bengal.
+
+Keep these traits stable across outputs:
+
+- Silver-gray short coat with a cool gray base.
+- Dark charcoal markings combining Li Hua-style facial and leg striping with a more irregular, wild-looking Bengal influence across the body.
+- Distinct forehead markings, cheek lines, striped legs, and a ringed tail.
+- Warm yellow to amber eyes with dark rims.
+- Pale gray-white muzzle, chin, chest, and lower face.
+- Long, prominent white whiskers.
+- Upright triangular ears with softly warm inner-ear tones.
+- Compact, sturdy body; cute but not excessively round or kitten-like.
+- Calm, intelligent, slightly serious expression.
+- Collar with a small gold tag whenever the neck is visible.
+
+Do not simplify the cat into a generic gray tabby, blue British Shorthair, orange tabby, leopard-spotted Bengal, or cartoon kitten. Preserve the mixed lineage through the combination of striped Li Hua features, subtle wild-pattern irregularity, yellow eyes, and the cat's real facial structure. The reference photos take priority over breed stereotypes.
+
+### Pair relationship
+
+- Jerry and the cat are companions and collaborators, not owner-and-prop decoration.
+- Use natural interactions: working beside a laptop, inspecting a diagram, watching a process, sitting together, or reacting to the same result.
+- Keep the pair secondary when the image's main purpose is to explain a mechanism.
+- For identity-led README heroes or editorial portraits, the pair may be the primary focal subject.
+
+## Reference-image protocol
+
+When the user asks for a personalized image of Jerry or the cat:
+
+1. Confirm that usable reference photos are present in the current conversation.
+2. Use multiple views to infer stable identity traits rather than copying one pose.
+3. Treat the photos as the primary source of appearance; breed labels are secondary guidance.
+4. Respect explicit exclusions such as “ignore the hat.”
+5. Establish the visual brief, output mode, destination, composition, and identity constraints before generating.
+6. Generate an identity test or character sheet before producing a complete README asset set.
+7. Do not commit raw personal reference photos into a public repository unless explicitly requested.
+8. Store only approved generated derivatives in the project assets directory.
 
 ## Choose the output mode
 
@@ -15,30 +74,32 @@ Use when the image must explain a concept, mechanism, workflow, comparison, or t
 
 - Deliver a complete PNG or WebP with a finished off-white scene.
 - Generate every essential title and label directly inside the bitmap.
-- Make the relation visible through objects, paths, states, or repeated materials; labels identify the evidence but do not replace it.
+- Make the relation visible through objects, paths, states, or repeated materials; labels identify evidence but do not replace it.
 - Do not generate an unlabeled base and add essential words in a separate rendering step.
 
 ### Mode B — transparent illustration
 
-Use when the character scene will be composed into a hero, document, card, slide, or other layout.
+Use when the character scene will be composed into a README hero, document, card, slide, or other layout.
 
 - Generate the subject on a perfectly uniform chroma-key background that does not occur in the artwork. Default to `#00FF00`; use `#FF00FF` when the subject contains green.
-- Do not include explanatory labels unless the user explicitly requests text inside the illustration.
-- Remove the background with the bundled `scripts/cutout.py` and deliver a transparent PNG.
-- Keep the transparent artwork as a reusable visual asset; the surrounding layout supplies the title and explanatory copy.
+- Do not include explanatory labels unless explicitly requested.
+- Remove the background with `scripts/cutout.py` and deliver a transparent PNG.
+- Keep the transparent artwork reusable; the surrounding layout supplies titles and explanatory copy.
 
 If the destination is unclear, choose Mode A when the image itself must communicate the idea and Mode B when another layout will carry the explanation.
 
 ## Shared visual language
 
-- Draw confident black manga/comic ink outlines with varied line weight and restrained circular halftone screentone.
-- Keep the recurring characters: a minimal stick-figure protagonist with a round head, thin round glasses, dot eyes, a simple smile, and thin line-drawn limbs; plus a chubby warm-yellow Border Collie companion.
-- Keep characters secondary to the subject's evidence or action.
-- Use black, white, and halftone gray as the base. Use warm yellow for the dog, small light patches, and sparse star accents.
-- Add at most two muted semantic colors. Common mapping: blue = input/content, orange = action/warning/cost, purple = process, green = successful result.
-- Avoid 3D, glossy gradients, photorealism, wobbly sketch lines, generic card grids, dashboards, decorative clutter, and watermarks.
+- Draw confident black manga/comic ink outlines with varied line weight.
+- Use restrained circular halftone screentone for gray surfaces and shadows instead of glossy gradients.
+- Use black, white, warm off-white, charcoal gray, and muted silver-gray as the base.
+- Reserve warm ochre or gold for the cat's eyes, collar tag, small light accents, and sparse star marks.
+- Add at most two muted semantic colors: blue for input/content, orange for action/warning/cost, purple for process, and green for successful results.
+- Use a lightly textured warm paper background for finished scenes.
+- Keep props concrete and useful: laptop, monitor, document, blueprint, terminal, flowchart, folder, tool, or result artifact.
+- Avoid 3D, glossy rendering, smooth airbrushed gradients, photorealism, wobbly sketch lines, generic card grids, dashboard clutter, decorative filler, and watermarks.
 
-## Mode A workflow — explanatory image
+## Mode A workflow
 
 ### 1. Write the visual brief
 
@@ -47,132 +108,132 @@ viewer_question: what should be understood in 10 seconds?
 concrete_claim: one-sentence conclusion
 real_objects: visible objects, interfaces, documents, tools, or states
 relation: comparison, transformation, causality, sequence, hierarchy, feedback, tradeoff, or pipeline
-visual_evidence: what must remain understandable when labels are ignored?
+visual_evidence: what remains understandable when labels are ignored?
+character_role: what Jerry and the cat are doing, if present
 scene: believable setting and 2–4 useful environmental cues
 semantic_colors: what each accent color means
-labels: exact short strings plus the evidence surface for each label
+labels: exact short strings and the evidence surface for each label
+identity_constraints: stable Jerry/cat traits and explicit exclusions
 ```
 
-Show the input, action or relation, and result. Keep one dominant focal action and no more than three major visual regions. For multiple steps, use a simple left-to-right or top-to-bottom sequence.
+Show the input, action or relation, and result. Keep one dominant focal action and no more than three major visual regions.
 
-### 2. Design the labels
+### 2. Design labels
 
-- Prefer 2–6 labels. Use more only when the explanation truly needs them.
-- Keep each label short and concrete: role, action, state, or outcome.
-- Place every label on or immediately beside its evidence surface, such as a desk nameplate, task sheet, folder tab, machine, meter, lane, or result document.
-- Use modern Chinese sans-serif typography, medium or bold, large enough to read at the intended display size.
-- Do not turn body copy, commands, tables, or long paragraphs into image text. Use a deterministic layout method when dense or editable text is required.
-
-Add this block to the generation prompt:
+- Prefer 2–6 short, concrete labels.
+- Place each label on or immediately beside its evidence surface.
+- Use modern Chinese sans-serif typography, medium or bold, large enough to read.
+- Do not place body copy, commands, tables, or long paragraphs inside the image.
 
 ```text
 Text (verbatim): Render these exact labels as part of the bitmap illustration:
 "<label 1>", "<label 2>", "<label 3>".
 Use each phrase exactly once. Do not translate, paraphrase, misspell, repeat,
-or add any other text. Use modern sans-serif medium/bold typography, large
-and readable. Place "<label 1>" on <evidence surface>; place "<label 2>" on
-<evidence surface>; place "<label 3>" on <evidence surface>.
+or add other text. Place each label on its specified evidence surface.
 ```
 
 ### 3. Build the prompt
 
 Use this order:
 
-1. State the concrete claim and shared task.
-2. Describe the real setting and the protagonist/dog action.
-3. Describe the evidence objects and their geometry: aligned, nested, connected, split, transformed, repeated, or converging.
-4. Assign semantic colors.
-5. Quote the exact labels and specify each placement.
-6. Add the Mode A style anchor.
-7. End with exclusions.
+1. State the concrete claim and task.
+2. Describe the real setting and action.
+3. Describe Jerry and the cat using the canonical identity block when present.
+4. Repeat explicit exclusions such as “no hat.”
+5. Describe evidence objects and their geometry.
+6. Assign semantic colors.
+7. Quote exact labels and placements.
+8. Add the Mode A style anchor.
+9. End with exclusions.
 
 Mode A style anchor:
 
 ```text
-Professional editorial manga/comic ink illustration. Clean confident black ink outlines with varied line weights, expressive but controlled. Use classic circular halftone screentone for gray and shadow areas. Minimal cute stick-figure protagonist with round head, thin round glasses, dot eyes, simple smile, and thin line-drawn limbs. Include a chubby warm-yellow Border Collie companion. Use an off-white lightly textured real environment, not a blank white canvas. Typography is modern sans-serif, medium or bold, large and readable. Color is restrained: black, white, halftone gray, warm yellow for the dog, plus at most two muted semantic accent colors. No 3D, no glossy gradients, no photorealism, no generic card grid, no dashboard, no decorative clutter, no tiny text, no long paragraphs, no watermark.
+Professional editorial manga/comic ink illustration. Clean confident black ink
+outlines with varied line weights and controlled circular halftone screentone.
+When present, Jerry is a young East Asian man with short textured black hair,
+dark round glasses, a calm friendly expression, and a light simple shirt; no hat
+unless explicitly requested. His companion is a Bengal-cat × Chinese Li Hua cat
+mix matching the supplied references: silver-gray short coat, dark charcoal mixed
+wild-and-striped markings, warm yellow eyes, pale muzzle and chest, long white
+whiskers, upright ears, ringed tail, and a small gold collar tag. Do not exaggerate
+Bengal rosettes or reduce the cat to a generic tabby. Use an off-white lightly
+textured environment. Color is restrained: black, white, charcoal and silver-gray
+halftone, warm ochre/gold for the cat's eyes and tag, plus at most two muted
+semantic accent colors. No old stick figure, no Border Collie, no hat, no 3D,
+no glossy gradients, no photorealism, no dashboard clutter, no tiny text,
+no long paragraphs, no watermark.
 ```
 
 ### 4. Inspect and retry
 
-1. Inspect the output at original resolution.
-2. Compare every label with the brief character by character. Confirm that each appears exactly once and that no stray text was added.
-3. Reject missing, duplicated, invented, or misspelled labels.
-4. Regenerate with one targeted correction while repeating all scene and style invariants. Do not conceal an error with a separate text layer.
+- Verify Jerry's hair, glasses, expression, and accessory exclusions.
+- Verify the cat matches the reference photos: mixed Bengal/Li Hua patterning, yellow eyes, pale muzzle, whiskers, ringed tail, and gold tag.
+- Reject purebred-looking leopard rosettes, a generic tabby appearance, the old stick figure, or any dog.
+- Compare every required label character by character and reject missing, duplicated, invented, or misspelled text.
+- Retry with one targeted correction while repeating all identity and style invariants.
 
-Use this retry instruction:
-
-```text
-Keep the scene, composition, characters, objects, colors, and all correct labels unchanged.
-Change only the incorrect text "<wrong>" to the exact text "<right>".
-Do not add, remove, translate, or repeat any other text.
-```
-
-## Mode B workflow — transparent illustration
+## Mode B workflow
 
 ### 1. Describe one reusable scene
 
-Use one character action and only the objects needed to establish it. Examples: drawing at a desk, inspecting a document, holding a blueprint, or presenting a finished result. Leave generous padding around the subject so the cutout can be composed safely.
+Use one character action and only the objects needed to establish it. Leave generous padding around the subject for safe composition.
 
 ### 2. Build the prompt
 
-Describe the subject first, then append this fixed anchor:
-
-Replace `<KEY_COLOR>` with the selected hex color before sending the prompt.
+Describe the subject, repeat identity constraints and exclusions, then append:
 
 ```text
-Style: professional manga/comic ink illustration. Clean confident ink outlines
-with varying line weights, thick for contours and thin for details, not wobbly
-or sketchy. Heavy use of classic circular halftone screentone dot patterns for
-all gray and shadow areas. The main character is a cute minimal stick figure
-with a round head, thin round glasses, dot eyes, simple smile, and thin
-line-drawn limbs. Include a chubby warm-yellow Border Collie companion.
-Color usage is extremely restrained: 90% black, white, and gray halftone;
-warm yellow only on the dog, small light patches, and sparse star accents.
-The background must be a perfectly uniform flat <KEY_COLOR> rectangle with zero
-gradient, texture, noise, speckles, shadows, floor plane, or lighting variation.
-Do not let halftone, ink, props, or the subject touch the image border. Keep
-generous padding. No text, no watermark. PNG format.
+Style: professional editorial manga/comic ink illustration. Clean confident ink
+outlines with varying line weights and circular halftone screentone for gray and
+shadow areas. Jerry is a young East Asian man with short textured black hair,
+dark round glasses, a calm friendly expression, and a light simple shirt. He
+wears no hat unless explicitly requested. His companion is a Bengal-cat × Chinese
+Li Hua cat mix matching the reference photos: silver-gray short coat, dark mixed
+wild-and-striped markings, warm yellow eyes, pale muzzle and chest, long white
+whiskers, upright ears, ringed tail, and a small gold collar tag. Do not depict a
+generic tabby or exaggerated purebred Bengal rosettes. The background must be a
+perfectly uniform flat <KEY_COLOR> rectangle with zero gradient, texture, noise,
+speckles, shadows, floor plane, or lighting variation. Keep generous padding.
+No old stick figure, no Border Collie, no hat, no text, no watermark. PNG format.
 ```
 
-### 3. Validate the source
+### 3. Validate and remove the background
 
-- Inspect the image before removal.
-- Confirm all four corners are uniform and visually match the chosen key color.
-- Reject backgrounds with gradients, texture, shadows, speckles, or artwork touching the border.
-- Preserve the source image alongside the transparent result until the output is approved.
-
-### 4. Remove the background
-
-Install Pillow if the active Python environment does not have it, then run:
+- Confirm all four corners are uniform and match the selected key color.
+- Confirm Jerry and the cat match the canonical identity block.
+- Reject artwork touching the border or backgrounds with texture, shadows, or lighting variation.
+- Run:
 
 ```bash
 python3 scripts/cutout.py source.png transparent.png
 ```
 
-Optional tuning:
+- Confirm the result is RGBA, corners have alpha `0`, and glasses, hair, ears, whiskers, tail, collar, and small props remain intact.
 
-```bash
-python3 scripts/cutout.py source.png transparent.png \
-  --transparent-threshold 12 \
-  --opaque-threshold 220
-```
+## README asset workflow
 
-The script samples the image border, builds a soft alpha matte from color distance, and removes color spill from antialiased edges. It works with any uniform key color, so the key can be chosen to avoid the subject palette.
+For repository-homepage work, follow this order:
 
-### 5. Validate the transparent result
-
-- Confirm the output is RGBA and all four corners have alpha `0`.
-- Confirm the subject remains complete, including glasses, thin limbs, dog ears, tail, and small props.
-- Check for a gray fringe at 100% zoom.
-- Confirm internal white and halftone areas were not erased.
-- Regenerate the source instead of forcing the algorithm when the background is visibly uneven.
+1. Inspect the real repository and existing README.
+2. Define the content hierarchy and asset inventory.
+3. Update this Skill or the project-specific identity specification before generating personalized assets.
+4. Decide whether each asset is Mode A or Mode B.
+5. Generate one identity test or character sheet.
+6. Obtain user approval for the identity direction.
+7. Generate the hero and supporting assets.
+8. Save approved assets under `assets/readme/` with source variants when available.
+9. Update README references only after asset approval.
+10. Preview desktop and narrow-width rendering.
+11. Commit on a branch and open a draft PR; do not publish directly to the default branch unless explicitly requested.
 
 ## Output handling
 
-- Save approved project assets inside the current project or output directory.
-- Do not leave project-referenced images only in the generator's default storage.
-- Use versioned filenames instead of overwriting an approved asset unless the user explicitly requests replacement.
-- Report the final prompt, output mode, source image path when Mode B is used, final image path, and any non-default cutout options.
+- Save approved project assets inside the project or output directory.
+- Do not leave referenced images only in the generator's default storage.
+- Use versioned filenames instead of overwriting approved assets unless replacement is explicitly requested.
+- Do not store raw personal photos in the repository by default.
+- Report the final prompt, output mode, source path when Mode B is used, final path, and non-default cutout options.
 
 ## Quality gate
 
@@ -180,18 +241,19 @@ For every output:
 
 - The subject is recognizable in about 3 seconds.
 - The main action or relation is clear in about 10 seconds.
-- Characters support the subject instead of becoming generic decoration.
-- Line work, halftone, warm yellow, and semantic accents remain consistent.
+- Jerry and the cat remain consistent with the canonical identity system.
+- The cat looks like the supplied Bengal/Li Hua mix rather than a breed stereotype.
+- Line work, halftone, restrained color, and semantic accents remain consistent.
+- Characters support the content instead of becoming generic decoration.
 
 For Mode A:
 
 - One claim, one focal action, and no more than three major visual regions.
-- The visual evidence still shows the relation when labels are ignored.
-- Every required label is exact, appears once, and is integrated into the correct evidence surface.
-- All labels remain readable at the intended display size.
+- Visual evidence remains understandable without labels.
+- Every required label is exact, appears once, and is readable.
 
 For Mode B:
 
-- Background removal is clean and the output has real transparency.
+- Background removal is clean and genuinely transparent.
 - Thin details and internal halftone regions remain intact.
 - No source background, fringe, shadow, or border artifact remains.
