@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">分工清楚，成本才会下降</title><desc id="desc">比较重复劳动与明确协作的实际差异。</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#D8D1C3" opacity=".24"/><circle cx="8" cy="9" r=".8" fill="#D8D1C3" opacity=".22"/></pattern>
+    <pattern id="half" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#C9C6BF"/><circle cx="2" cy="2" r="1.15" fill="#AAA59C"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#171717"/></marker>
+  </defs>
+  <rect width="800" height="800" rx="30" fill="#F7F3EA"/><rect width="800" height="800" rx="30" fill="url(#paper)"/>
+  <g font-family="'Noto Sans CJK SC','PingFang SC','Segoe UI',sans-serif" fill="#171717">
+    <text x="48" y="72" font-size="38" font-weight="780">分工清楚，成本才会下降</text><text x="49" y="108" font-size="19" font-weight="600" fill="#6D6962">比较重复劳动与明确协作的实际差异。</text><path d="M48 128H752" stroke="#171717" opacity=".2"/>
+    <path d="M400 154V742" stroke="#171717" stroke-width="2" stroke-dasharray="8 12" opacity=".25"/>
+    <rect x="48" y="158" width="310" height="72" rx="22" fill="#D9894C" stroke="#171717" stroke-width="3"/><text x="203" y="204" text-anchor="middle" font-size="29" font-weight="800">重复处理</text>
+    <rect x="442" y="158" width="310" height="72" rx="22" fill="#78A67F" stroke="#171717" stroke-width="3"/><text x="597" y="204" text-anchor="middle" font-size="29" font-weight="800">清晰分工</text>
+    <g id="person"><circle cx="0" cy="0" r="26" fill="#FFFDF8" stroke="#171717" stroke-width="3"/><rect x="-20" y="-8" width="18" height="14" rx="5" fill="none" stroke="#171717" stroke-width="2"/><rect x="2" y="-8" width="18" height="14" rx="5" fill="none" stroke="#171717" stroke-width="2"/><path d="M-2-1H2M-8 10Q0 16 8 10M0 26V76M-18 45H18M-10 76V102M10 76V102" fill="none" stroke="#171717" stroke-width="3" stroke-linecap="round"/></g>
+    <use href="#person" transform="translate(105 340)"/><use href="#person" transform="translate(203 340)"/><use href="#person" transform="translate(301 340)"/>
+    <rect x="82" y="548" width="242" height="112" rx="18" fill="#FFFDF8" stroke="#171717" stroke-width="3"/><path d="M113 583H292M113 608H270M113 633H297" stroke="#D8D1C3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M105 536V458M203 536V458M301 536V458" stroke="#D9894C" stroke-width="5" marker-end="url(#arrow)"/><text x="203" y="704" text-anchor="middle" font-size="22" font-weight="700" fill="#6D6962">三个人重复读同一份材料</text>
+    <rect x="470" y="292" width="90" height="78" rx="16" fill="#7FA7D8" stroke="#171717" stroke-width="3"/><text x="515" y="341" text-anchor="middle" font-size="23" font-weight="800">输入</text>
+    <rect x="636" y="292" width="90" height="78" rx="16" fill="#9B83C7" stroke="#171717" stroke-width="3"/><text x="681" y="341" text-anchor="middle" font-size="23" font-weight="800">处理</text>
+    <rect x="552" y="438" width="90" height="78" rx="16" fill="#F2C14E" stroke="#171717" stroke-width="3"/><text x="597" y="487" text-anchor="middle" font-size="23" font-weight="800">验收</text>
+    <path d="M562 331H624M681 382C675 418 649 438 635 450M515 382C522 418 551 439 565 450" fill="none" stroke="#171717" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(597 600)"><ellipse cx="0" cy="0" rx="65" ry="78" fill="url(#half)" stroke="#171717" stroke-width="4"/><circle cx="0" cy="-67" r="54" fill="url(#half)" stroke="#171717" stroke-width="4"/><path d="M-42-97L-34-135L-12-103M12-103L35-135L43-96" fill="url(#half)" stroke="#171717" stroke-width="4"/><ellipse cx="-20" cy="-68" rx="12" ry="16" fill="#F2C14E" stroke="#171717" stroke-width="3"/><ellipse cx="20" cy="-68" rx="12" ry="16" fill="#F2C14E" stroke="#171717" stroke-width="3"/><ellipse cx="0" cy="-42" rx="27" ry="20" fill="#FFFDF8" stroke="#171717" stroke-width="2"/><path d="M-5-45L0-49L5-45L0-39Z" fill="#171717"/><path d="M-38-42H-75M38-42H75M-30-105L-24-89M0-110V-90M30-105L24-89" stroke="#171717" stroke-width="3" stroke-linecap="round"/><circle cx="0" cy="-18" r="15" fill="#E6AD2F" stroke="#171717" stroke-width="3"/></g>
+    <text x="597" y="704" text-anchor="middle" font-size="22" font-weight="700" fill="#6D6962">角色明确，结果只验收一次</text>
+  </g>
+</svg>
